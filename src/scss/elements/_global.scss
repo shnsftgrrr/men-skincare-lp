@@ -14,3 +14,8 @@ body {
 .overflow {
   overflow: hidden;
 }
+
+.container {
+  @include mixin.max-width;
+}
+
