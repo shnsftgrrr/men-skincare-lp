@@ -6,10 +6,11 @@
 @import 'elements/global';
 
 // Components
-// // Common
+@import 'components/lp';
 
+
+// // Common
 @import 'components/common/header';
 @import 'components/common/footer';
 @import 'components/common/buttons';
 @import 'components/common/text';
-
