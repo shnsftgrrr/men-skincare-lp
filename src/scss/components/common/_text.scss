@@ -10,44 +10,57 @@
   text-transform: uppercase;
   letter-spacing: -1.07px;
   line-height: fn.getem(64, 55);
+  @include mq.sp {
+    font-size: 32px;
+  }
 
   &--large {
     font-size: 8rem;
     letter-spacing: -1.33px;
     line-height: fn.getem(80, 72);
+    @include mq.sp {
+      font-size: 40px;
+    }
   }
 
   &--medium {
     font-size: 5rem;
     letter-spacing: -0.83px;
     line-height: fn.getem(50, 52);
+    @include mq.sp {
+      font-size: 25px;
+    }
   }
 
   &--small {
     font-size: 2.3rem;
     letter-spacing: 0;
     line-height: fn.getem(23, 22);
+    @include mq.sp {
+      font-size: 18px;
+    }
   }
 
   &.light {
     color: color.$white-af6;
-  }
-
-  &.dark {
-    color: color.$gray-02e;
   }
 }
 
 .subtitle {
   font-size: 1.8rem;
   color: color.$white;
-  text-transform: uppercase;
   line-height: fn.getem(18, 24);
+  @include mq.sp {
+    font-size: 16px;
+  }
 }
 
 .text {
   font-size: 1.8rem;
   line-height: fn.getem(18, 24);
+  @include mq.sp {
+    font-size: 16px;
+  }
 
   &--light {
     color: color.$white;
@@ -59,13 +72,16 @@
 }
 
 .heading {
-  width: fit-content;
+  display: block;
   background-color: color.$yellow;
   border-radius: 35px;
   padding: 20px 4%;
   font-size: 1.8rem;
   line-height: 1em;
-  @include mixin.center;
+  text-align: center;
+  @include mq.sp {
+    font-size: 16px;
+  }
 
   &--full {
     width: 100%;
@@ -74,4 +90,8 @@
   &--small {
     padding: 10px 19px 10px 13px;
   }
+}
+
+.underline {
+  text-decoration: underline;
 }

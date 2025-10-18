@@ -2,4 +2,254 @@ extends includes/layout.pug
 
 block content
   .lp
-    .container
+    section.lp__main-visual
+      .container
+        .lp__main-visual-wrapper
+          h1.title.light Skincare for guys #[br]that aren’t into #[br]skincare
+          p.subtitle TRY THE ONE MINUTE SKINCARE ROUTINE
+          span.heading.lp__main-visual-heading TRY TODAY!
+        .lp__main-visual-testimonial
+          img.lp__main-visual-stars(src='/img/stars-yellow.svg', alt)
+          p.subtitle.lp__main-visual-subtitle “I LOVE THIS STUFF, IT TOTALLY#[br] CHANGED THE GAME FOR ME”
+          .lp__main-visual-customer
+            img.lp__main-visual-customer-img(src='/img/customer-ps.svg', alt)
+            span.lp__main-visual-customer-name PETER S.
+        .lp__main-visual-image
+          img(src='/img/main-visual.png', alt)
+    section.lp__routine
+      .container
+        .heading.heading--full Just #[span.underline one minute] a day will make your skin look healthier and younger
+        .lp__routine-wrapper
+          .lp__routine-wrapper-text
+            h2.title.title--large A simple #[br]routine that #[br]works
+            p.text.lp__routine-text Say goodbye to complicated skincare routines. Our mens' skincare line is designed for simplicity and effectiveness. With our lightweight formulas, you can achieve healthier and younger-looking skin with minimal effort. Perfect for guys who are new to skincare or just want to keep it simple.
+            ul.lp__routine-list
+              li.lp__routine-item.text Lightweight formulas
+              li.lp__routine-item.text Easy to use formats
+              li.lp__routine-item.text Clean Ingredients
+              li.lp__routine-item.text Everything you need, nothing you don't
+          .lp__routine-image
+            img(src='/img/routine-d1.png', alt)
+        .lp__routine-product
+          .lp__routine-product-list
+            .lp__routine-product-item
+              img.lp__routine-product-item-img(src='/img/routine-product1.png', alt)
+              p.text Cutting-edge #[br]Korean Skincare Technology
+            .lp__routine-product-item
+              img.lp__routine-product-item-img(src='/img/routine-product2.png', alt)
+              p.text Science-backed Ingredients
+            .lp__routine-product-item
+              img.lp__routine-product-item-img(src='/img/routine-product3.png', alt)
+              p.text Dermatologically Tested
+        .lp__routine-works
+          span.text.lp__routine-works-text Heres how D1 works
+          img.lp__routine-works-clock(src='/img/clock.svg', alt)
+          h2.title.title--large.lp__routine-works-title Just 1 minute a day
+          .lp__routine-works-list
+            .lp__routine-works-item
+              img.lp__routine-works-step-img(src='/img/step1.png', alt)
+              .lp__routine-works-step-wrap
+                img.lp__routine-works-product(src='/img/cleanser.png', alt='cleanser')
+                span.text Wash your face with our Bamboo Charcoal Cleanser
+            .lp__routine-works-item
+              img.lp__routine-works-step-img(src='/img/step2.png', alt)
+              .lp__routine-works-step-wrap
+                img.lp__routine-works-product(src='/img/moisturizer.png', alt='cleanser')
+                span.text Apply a dime size amount of All Day Moisturizer evenly to your face
+            .lp__routine-works-item
+              img.lp__routine-works-step-img(src='/img/step3.png', alt)
+              .lp__routine-works-step-wrap
+                img.lp__routine-works-product(src='/img/stick.png', alt='cleanser')
+                span.text Apply small amount of our Eye Cream under your eyes and around the sides
+    section.lp__results
+      h2.title.title--medium.lp__results-title Results you can see
+      p.text.lp__results-text.
+        A simple skincare routine is essential to reduce and prevent fine lines, wrinkles, dry skin, and dark splotches that start to appear on your face as you age. 
+        #[br]#[br]
+        If you dont feel better and see resuilts in 30 days, you can keep the product and we’ll send you a full refund
+      .lp__results-banner
+        h2.title.title--medium.light.lp__results-banner-title “The one minute #[br]routine that will #[br]save your face”
+      .lp__results-banner-marquee
+        ul.lp__results-banner-track
+          - for (var i = 1; i <= 3; i++)
+            li.lp__results-banner-track-item No prescription Required
+            li.lp__results-banner-track-item All-natural ingredients
+            li.lp__results-banner-track-item Formulated by doctors & PHDs
+            li.lp__results-banner-track-item 100% risk-free returns
+      .container
+        h2.title.title--medium Daily Benefits. #[br]Long-term Results
+        p.text.lp__results-subtitle We started D1 beacuse....
+        ul.lp__results-list
+          li.lp__results-item
+            img.lp__results-img(src='/img/result1.png', alt)
+            .lp__results-text-wrap
+              h6.title.title--small Look Fresher and #[br]More Confident
+              span.text.lp__results-text-small Prevent and reduce fine lines and wrinkles that develop with dry skin as you age
+          li.lp__results-item
+            img.lp__results-img(src='/img/result2.png', alt)
+            .lp__results-text-wrap
+              h6.title.title--small Prevent Aging and #[br]Maintain Youthful Skin
+              span.text.lp__results-text-small Prevent and reduce fine lines and wrinkles that develop with dry skin as you age
+          li.lp__results-item
+            img.lp__results-img(src='/img/result3.png', alt)
+            .lp__results-text-wrap
+              h6.title.title--small Boost Your Skin Health
+              span.text.lp__results-text-small Prevent and reduce fine lines and wrinkles that develop with dry skin as you age
+    section.lp__product-set
+      .container
+        span.heading.heading--small.lp__product-set-heading Start your 1 minute routine
+        .lp__product-set-wrap
+          .lp__product-set-wrapper-text
+            h2.title.title--large Get the set
+            p.text.lp__routine-text Experience the ultimate simplicity and effectiveness with our complete skincare set. Designed for men who want great skin without the hassle, our set includes everything you need for a daily routine that takes just one minute.
+            ul.lp__routine-list
+              li.lp__routine-item.text $10 Off Each Pouch
+              li.lp__routine-item.text Never Run Out
+              li.lp__routine-item.text No Commitment. Cancel Anytime
+              li.lp__routine-item.text Pause, Delay, or Change Frequency
+            a.button-default.lp__product-set-btn(href='/') 
+              span Add to cart — $58.99
+              span.sale $10.99
+
+          .lp__routine-image
+            img.lp__results-img(src='/img/products.png', alt)
+    section.lp__ingredients
+      .container
+        h2.title.title--medium best-in-class #[br]ingredients that work
+        span.heading.heading--small.lp__ingredients-heading FULL INGREDIENT LIST
+        ul.lp__ingredients-list
+          li.lp__ingredients-item
+            img.lp__ingredients-img(src='/img/ingredients1.png', alt)
+            .lp__ingredients-text-wrap
+              span.text.text--blue Hyaluronic Acid
+              br
+              span.lp__ingredients-text-desc All Day Moisturizer
+          li.lp__ingredients-item
+            img.lp__ingredients-img(src='/img/ingredients2.png', alt)
+            .lp__ingredients-text-wrap
+              span.text.text--blue Niacinamide
+              br
+              span.lp__ingredients-text-desc All Day Moisturizer
+          li.lp__ingredients-item
+            img.lp__ingredients-img(src='/img/ingredients3.png', alt)
+            .lp__ingredients-text-wrap
+              span.text.text--blue Bamboo Charcoal
+              br
+              span.lp__ingredients-text-desc All Day Moisturizer
+          li.lp__ingredients-item
+            img.lp__ingredients-img(src='/img/ingredients4.png', alt)
+            .lp__ingredients-text-wrap
+              span.text.text--blue Centella Asiatica
+              br
+              span.lp__ingredients-text-desc Charcoal Cleanser
+          li.lp__ingredients-item
+            img.lp__ingredients-img(src='/img/ingredients5.png', alt)
+            .lp__ingredients-text-wrap
+              span.text.text--blue Rose Oil
+              br
+              span.lp__ingredients-text-desc Charcoal Cleanser
+          li.lp__ingredients-item
+            img.lp__ingredients-img(src='/img/ingredients6.png', alt)
+            .lp__ingredients-text-wrap
+              span.text.text--blue Bamboo Charcoal
+              br
+              span.lp__ingredients-text-desc All Day Moisturizer
+    section.lp__formula
+      .container
+        span.heading.heading--small.lp__formula-heading Just 1 minute a day
+        .lp__formula-text-header
+          h2.title.title--large.light three perfect formulas
+          p.subtitle A #[span.underline game changer] for your skin
+        .lp__formula-list
+          .lp__formula-item
+            .lp__formula-item-wrap
+              h4.title.title--medium.light Charcoal face Wash
+              p.text.text--light Omne animal, simul atque haec putat, ut labore et impetus quo voluptas nulla pariatur? at magnum periculum adiit in quo quaerimus.
+            .lp__formula-img
+              img(src='/img/product1.png', alt="")
+          .lp__formula-item
+            .lp__formula-item-wrap
+              h4.title.title--medium.light All Day Face Moisturizer
+              p.text.text--light Omne animal, simul atque haec putat, ut labore et impetus quo voluptas nulla pariatur? at magnum periculum adiit in quo quaerimus.
+            .lp__formula-img
+              img(src='/img/product2.png', alt="")
+          .lp__formula-item
+            .lp__formula-item-wrap
+              h4.title.title--medium.light daily eye cream
+              p.text.text--light Omne animal, simul atque haec putat, ut labore et impetus quo voluptas nulla pariatur? at magnum periculum adiit in quo quaerimus.
+            .lp__formula-img
+              img(src='/img/product3.png', alt="")
+        span.text.lp__formula-reviews Here is what our customers say
+        .lp__formula-reviews-list
+          .lp__formula-reviews-item
+            img.lp__formula-reviews-rate(src='/img/stars-gray.svg', alt="")
+            p.lp__formula-reviews-text “The testosterone support my daily regimine has needed for ages! I haven’t felt this young in years.”
+            .lp__formula-reviews-customer
+              span.lp__formula-reviews-initials ET
+              span.lp__formula-reviews-name Eric Trexler
+              span.lp__formula-reviews-title Men’s Wellness Influencer
+          .lp__formula-reviews-item
+            img.lp__formula-reviews-rate(src='/img/stars-gray.svg', alt="")
+            p.lp__formula-reviews-text “The testosterone support my daily regimine has needed for ages! Thanks Joymode, I will definitely be renewing my subscription”
+            .lp__formula-reviews-customer
+              span.lp__formula-reviews-initials BS
+              span.lp__formula-reviews-name Ben Steelheart
+              span.lp__formula-reviews-title Ph.D., Human Movement Science
+          .lp__formula-reviews-item
+            img.lp__formula-reviews-rate(src='/img/stars-gray.svg', alt="")
+            p.lp__formula-reviews-text “I dont miss a day without it now. This is the best stuff on the market for sure!”
+            .lp__formula-reviews-customer
+              span.lp__formula-reviews-initials HR
+              span.lp__formula-reviews-name Harrison Rockwell
+              span.lp__formula-reviews-title Men’s Wellness Influencer
+    section.lp__fans
+      h2.title.title--medium What our fans say
+      .lp__fans-list.js-flickity(data-flickity='{"wrapAround": true, "contain": false, "cellAlign": "left", "pageDots": false, "prevNextButtons": false, "draggable": true}')
+        - for (var i = 1; i <= 3; i++)
+          .lp__fans-item.carousel-cell
+            img.lp__fans-item-bg(src='/img/fans-img.jpg', alt="")
+            .lp__fans-product
+              .lp__fans-product-wrap
+                img.lp__fans-stars(src='/img/stars-blue.svg', alt="")
+                span.lp__fans-product-name D1 Eye Cream
+                span.lp__fans-product-price $20.99
+              a.button-default(href="#") ADD
+          .lp__fans-item.carousel-cell
+            img.lp__fans-item-bg(src='/img/fans-img.jpg', alt="")
+            .lp__fans-product
+              .lp__fans-product-wrap
+                img.lp__fans-stars(src='/img/stars-blue.svg', alt="")
+                span.lp__fans-product-name D1 Face Wash
+                span.lp__fans-product-price $20.99
+              a.button-default(href="#") ADD
+          .lp__fans-item.carousel-cell
+            img.lp__fans-item-bg(src='/img/fans-img.jpg', alt="")
+            .lp__fans-product
+              .lp__fans-product-wrap
+                img.lp__fans-stars(src='/img/stars-blue.svg', alt="")
+                span.lp__fans-product-name D1 Complete Set
+                span.lp__fans-product-price $58.99
+              a.button-default(href="#") ADD
+          .lp__fans-item.carousel-cell
+            img.lp__fans-item-bg(src='/img/fans-img.jpg', alt="")
+            .lp__fans-product
+              .lp__fans-product-wrap
+                img.lp__fans-stars(src='/img/stars-blue.svg', alt="")
+                span.lp__fans-product-name D1 Moisturizer
+                span.lp__fans-product-price $20.99
+              a.button-default(href="#") ADD
+      .container
+        span.text.text--blue Start your 1 minute routine
+        .lp__product-set-wrap
+          .lp__product-set-wrapper-text
+            h2.title.title--large Get the set
+            p.text.lp__routine-text.lp__routine-text--noborder Omne animal, simul atque haec putat, ut labore et impetus quo voluptas nulla pariatur? at magnum periculum adiit in quo quaerimus.
+            ul.lp__routine-list
+              li.lp__routine-item.lp__routine-item--wborder.text $10 Off Each Pouch
+              li.lp__routine-item.lp__routine-item--wborder.text Never Run Out
+              li.lp__routine-item.lp__routine-item--wborder.text No Commitment. Cancel Anytime
+              li.lp__routine-item.lp__routine-item--wborder.text Pause, Delay, or Change Frequency
+            a.button-default.lp__product-set-btn(href='/') 
+              span ADD TO CART — $58.99
+          .lp__routine-image
+            img.lp__results-img(src='/img/products.png', alt)
