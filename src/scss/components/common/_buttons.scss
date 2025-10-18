@@ -1,0 +1,20 @@
+@use '../../settings/color' as color;
+@use '../../settings/font-family' as font-family;
+@use '../../settings/font-weight' as fw;
+@use '../../tools/mixin' as mixin;
+@use '../../tools/media-queries' as mq;
+
+.button-default {
+  width: fit-content;
+  border-radius: 35px;
+  padding: 12px 40px;
+  background-color: color.$black-430;
+  font-size: 1.8rem;
+  line-height: 1em;
+  color: color.$white;
+  @include mixin.center;
+  @include mq.sp {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+}
