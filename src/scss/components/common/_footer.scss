@@ -1,0 +1,161 @@
+@use '../../settings/color' as color;
+@use '../../settings/font-family' as font-family;
+@use '../../settings/font-weight' as fw;
+@use '../../tools/mixin' as mixin;
+@use '../../tools/function' as fn;
+@use '../../tools/media-queries' as mq;
+
+.footer {
+  background-color: color.$black-430;
+
+  &__container {
+    padding: 42px 88px 64px;
+    @include mq.sp {
+      padding: 20px 20px 32px;
+    }
+  }
+
+  &__text-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 29px;
+    @include mq.sp {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__heading {
+    font: fw.$bold 2.1rem font-family.$inter;
+    color: color.$white-eff;
+    margin-bottom: 19px;
+    @include mq.sp {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    &.mb12 {
+      margin-bottom: 12px;
+      @include mq.sp {
+        margin-bottom: 6px;
+      }
+    }
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    color: color.$white-7fa;
+    line-height: fn.getem(14, 18);
+    margin-bottom: 0;
+  }
+
+  &__email {
+    display: flex;
+    background-color: color.$white-eff;
+    padding: 7px 10px 7px 22px;
+    @include mq.sp {
+      padding: 10px;
+    }
+  }
+
+  &__email-field {
+    height: auto;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: color.$white-eff;
+    font-size: 1.4rem;
+    box-shadow: unset;
+    color: color.$black-430;
+
+    ::placeholder {
+      opacity: 0.3;
+    }
+
+    &:focus {
+      border: none;
+      background-color: unset;
+      box-shadow: unset;
+    }
+  }
+
+  &__submit {
+    max-width: 90px;
+    width: 100%;
+    border: 0;
+    font-size: 1.8rem;
+    background-color: color.$black-430;
+    color: color.$white;
+    padding-block: 20px;
+    cursor: pointer;
+  }
+
+  &__social-media-wrap {
+    display: flex;
+    gap: 7px;
+    margin: 24px 0 50px;
+  }
+
+  &__social-media {
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    background-color: color.$white-eff;
+    @include mixin.center;
+  }
+
+  &__link-container {
+    display: flex;
+    gap: 37px;
+    @include mq.sp {
+      gap: 16px;
+    }
+  }
+
+  &__link,
+  &__copyright {
+    font-size: 1.4rem;
+    color: color.$white-7fa;
+    opacity: 0.4;
+    line-height: fn.getem(14, 22);
+  }
+
+  &__copyright {
+    display: block;
+    margin-top: -10px;
+    @include mq.sp {
+      margin-top: 0;
+      text-align: center;
+    }
+  }
+
+  &__link-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    @include mq.sp {
+      gap: 6px;
+    }
+  }
+
+  &__note-container {
+    border: 2px solid rgba(color.$white, 0.1);
+    border-radius: 17px;
+    padding: 20px;
+    max-width: 300px;
+    width: 100%;
+    margin: -20px 0 0 auto;
+    @include mq.sp {
+      margin: 20px 0;
+      max-width: 100%;
+    }
+  }
+
+  &__note-text {
+    color: color.$white-7fa;
+    opacity: 0.4;
+    font-size: 12px;
+    line-height: 13px;
+    margin-bottom: 0;
+  }
+}
