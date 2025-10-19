@@ -26,7 +26,7 @@
     display: flex;
     align-items: center;
     gap: 16px;
-    @include mq.sp {
+    @include mq.mobile {
       gap: 8px;
     }
   }
@@ -41,7 +41,7 @@
     display: flex;
     align-items: center;
     gap: 29px;
-    @include mq.sp {
+    @include mq.mobile {
       gap: 8px;
     }
   }
@@ -49,7 +49,7 @@
   &__cart {
     width: 36px;
     height: 36px;
-    @include mq.sp {
+    @include mq.mobile {
       width: 25px;
       height: 25px;
     }

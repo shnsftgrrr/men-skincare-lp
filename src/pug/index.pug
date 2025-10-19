@@ -16,7 +16,7 @@ block content
             span.lp__main-visual-customer-name PETER S.
         .lp__main-visual-image
           img(src='/img/main-visual.png', alt)
-    section.lp__routine
+    //section.lp__routine
       .container
         .heading.heading--full Just #[span.underline one minute] a day will make your skin look healthier and younger
         .lp__routine-wrapper
@@ -30,6 +30,25 @@ block content
               li.lp__routine-item.text Everything you need, nothing you don't
           .lp__routine-image
             img(src='/img/routine-d1.png', alt)
+    section.lp__routine
+      .grid-container
+        .grid-x.grid-margin-x
+          .cell.small-12
+            span.heading.heading--full Just #[span.underline one minute] a day will make your skin look healthier and younger
+        .grid-x.grid-margin-x.align-middle.lp__routine-wrapper
+          .cell.small-12.medium-6
+            .lp__routine-wrapper-text
+              h2.title.title--large A simple #[br]routine that #[br]works
+              p.text.lp__routine-text Say goodbye to complicated skincare routines. Our mens' skincare line is designed for simplicity and effectiveness. With our lightweight formulas, you can achieve healthier and younger-looking skin with minimal effort. Perfect for guys who are new to skincare or just want to keep it simple.
+              ul.lp__routine-list
+                li.lp__routine-item.text Lightweight formulas
+                li.lp__routine-item.text Easy to use formats
+                li.lp__routine-item.text Clean Ingredients
+                li.lp__routine-item.text Everything you need, nothing you don't
+          .cell.small-12.medium-6
+            .lp__routine-image
+              img(src='/img/routine-d1.png', alt)
+      .container
         .lp__routine-product
           .lp__routine-product-list
             .lp__routine-product-item
@@ -61,6 +80,8 @@ block content
               .lp__routine-works-step-wrap
                 img.lp__routine-works-product(src='/img/stick.png', alt='cleanser')
                 span.text Apply small amount of our Eye Cream under your eyes and around the sides
+        
+    
     section.lp__results
       h2.title.title--medium.lp__results-title Results you can see
       p.text.lp__results-text.
@@ -238,18 +259,20 @@ block content
                 span.lp__fans-product-name D1 Moisturizer
                 span.lp__fans-product-price $20.99
               a.button-default(href="#") ADD
-      .container
+      .grid-container.lp__product-set-container
         span.text.text--blue Start your 1 minute routine
-        .lp__product-set-wrap
-          .lp__product-set-wrapper-text
-            h2.title.title--large Get the set
-            p.text.lp__routine-text.lp__routine-text--noborder Omne animal, simul atque haec putat, ut labore et impetus quo voluptas nulla pariatur? at magnum periculum adiit in quo quaerimus.
-            ul.lp__routine-list
-              li.lp__routine-item.lp__routine-item--wborder.text $10 Off Each Pouch
-              li.lp__routine-item.lp__routine-item--wborder.text Never Run Out
-              li.lp__routine-item.lp__routine-item--wborder.text No Commitment. Cancel Anytime
-              li.lp__routine-item.lp__routine-item--wborder.text Pause, Delay, or Change Frequency
-            a.button-default.lp__product-set-btn(href='/') 
-              span ADD TO CART — $58.99
-          .lp__routine-image
-            img.lp__results-img(src='/img/products.png', alt)
+        .grid-x.grid-margin-x.align-middle.lp__product-set-wrap
+          .cell.small-12.medium-6
+            .lp__product-set-wrapper-text
+              h2.title.title--large Get the set
+              p.text.lp__routine-text.lp__routine-text--noborder Omne animal, simul atque haec putat, ut labore et impetus quo voluptas nulla pariatur? at magnum periculum adiit in quo quaerimus.
+              ul.lp__routine-list
+                li.lp__routine-item.lp__routine-item--wborder.text $10 Off Each Pouch
+                li.lp__routine-item.lp__routine-item--wborder.text Never Run Out
+                li.lp__routine-item.lp__routine-item--wborder.text No Commitment. Cancel Anytime
+                li.lp__routine-item.lp__routine-item--wborder.text Pause, Delay, or Change Frequency
+              a.button-default.lp__product-set-btn(href='/') 
+                span ADD TO CART — $58.99
+          .cell.small-12.medium-6
+            .lp__routine-image
+              img.lp__results-img(src='/img/products.png', alt)
