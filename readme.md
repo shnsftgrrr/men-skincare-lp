@@ -68,7 +68,7 @@ This watches:
 
 ## Dependencies
 - [foundation-sites](https://get.foundation/sites/docs/)
-- [flickity] (https://flickity.metafizzy.co/)
+- [flickity](https://flickity.metafizzy.co/)
 - [sass](https://sass-lang.com/)
 - [pug-cli](https://www.npmjs.com/package/pug-cli)
 - [browser-sync](https://browsersync.io/)
