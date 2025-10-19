@@ -1,26 +1,28 @@
 # Men Skincare Landing Page  
 A lightweight front-end setup built with **Pug**, **SCSS**, **Foundation**, and **BrowserSync** for live-reload development.  
-This project demonstrates a responsive landing page structure using a modular SCSS architecture and Foundation’s grid system.
+This project demonstrates a responsive landing page structure using a modular SCSS architecture.
 
 ---
 
 ## Project Structure
 ```
 project/
+├─ dist/
 ├─ src/
 │  ├─ img/              # Image assets
 │  ├─ js/               # JavaScript source
 │  │   └─ main.js
 │  ├─ pug/              # Pug templates
-│  │   ├─ includes/     # Header, Footer, layout, mixins
+│  │   ├─ includes/     # Header, Footer, layout
 │  │   └─ index.pug     # Landing page
 │  └─ scss/             # SCSS styles
 │      ├─ components/   # Reusable parts (buttons, titles, etc.)
+        ├─ helper.scss  # For helper classes
+        └─ lp.scss      # Styles for main landing page
 │      ├─ elements/     # Global + reset styles
 │      ├─ settings/     # Colors, fonts, weights
 │      ├─ tools/        # Mixins, media queries, functions
-│      └─ style.scss    # Main entry point
-├─ dist/                # Compiled output (HTML, CSS, JS, IMG)
+│      └─ style.scss    # Main entry point              # Compiled output (HTML, CSS, JS, IMG)
 ├─ package.json
 ├─ package-lock.json
 └─ README.md
@@ -30,7 +32,8 @@ project/
 
 ## Features
 - **Pug** templating for clean and reusable HTML
-- **SCSS** with Foundation framework for responsive layout
+- **SCSS** with partial **Foundation** integration
+- **Flickity** for carousel
 - **BrowserSync** for live reload on every save
 
 ---
@@ -65,6 +68,7 @@ This watches:
 
 ## Dependencies
 - [foundation-sites](https://get.foundation/sites/docs/)
+- [flickity] (https://flickity.metafizzy.co/)
 - [sass](https://sass-lang.com/)
 - [pug-cli](https://www.npmjs.com/package/pug-cli)
 - [browser-sync](https://browsersync.io/)
@@ -72,5 +76,5 @@ This watches:
 
 ---
 
-## ✨ Author
+## Author
 Developed by **Sheena Sofia Tegerero**  
