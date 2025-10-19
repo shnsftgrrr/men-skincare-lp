@@ -10,7 +10,7 @@
 
   &__container {
     padding: 42px 0 64px;
-    @include mq.sp {
+    @include mq.mobile {
       padding: 20px 0 32px;
     }
   }
@@ -20,7 +20,7 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 29px;
-    @include mq.sp {
+    @include mq.mobile {
       margin-bottom: 15px;
     }
   }
@@ -29,14 +29,14 @@
     font: fw.$bold 2.1rem font-family.$inter;
     color: color.$white-eff;
     margin-bottom: 19px;
-    @include mq.sp {
+    @include mq.mobile {
       font-size: 16px;
       margin-bottom: 10px;
     }
 
     &.mb12 {
       margin-bottom: 12px;
-      @include mq.sp {
+      @include mq.mobile {
         margin-bottom: 6px;
       }
     }
@@ -53,7 +53,7 @@
     display: flex;
     background-color: color.$white-eff;
     padding: 7px 10px 7px 22px;
-    @include mq.sp {
+    @include mq.mobile {
       padding: 10px;
     }
   }
@@ -107,7 +107,7 @@
   &__link-container {
     display: flex;
     gap: 37px;
-    @include mq.sp {
+    @include mq.mobile {
       gap: 16px;
     }
   }
@@ -123,7 +123,7 @@
   &__copyright {
     display: block;
     margin-top: -10px;
-    @include mq.sp {
+    @include mq.mobile {
       margin-top: 0;
       text-align: center;
     }
@@ -133,7 +133,7 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
-    @include mq.sp {
+    @include mq.mobile {
       gap: 6px;
     }
   }
@@ -145,7 +145,7 @@
     max-width: 300px;
     width: 100%;
     margin: -20px 0 0 auto;
-    @include mq.sp {
+    @include mq.mobile {
       margin: 20px 0;
       max-width: 100%;
     }
